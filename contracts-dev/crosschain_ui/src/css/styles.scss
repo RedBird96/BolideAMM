@@ -1,0 +1,64 @@
+.box {
+  padding: 4px;
+  text-align: center;
+  vertical-align: center;
+}
+.header {
+  height: 50px;
+}
+.nav {
+}
+.content {
+  flex: 1 1 40%;
+}
+.toc {
+}
+.footer {
+}
+
+.box.first {
+  margin-top: 200px;
+}
+
+.page-front {
+  .k-button {
+    width: 80%;
+    padding: 30px 0px;
+    font-size: 2.5em;
+  }
+}
+
+.k-form-horizontal .k-form-field > .k-label {
+  width: 45% !important;
+}
+
+.k-form-horizontal .k-form-fieldset > .k-form-legend {
+  text-align: left !important;
+}
+
+.k-form-horizontal .k-form-fieldset.deposit-estimation .k-input .k-input-inner {
+  text-align: right;
+}
+
+.chain-error {
+  margin-left: 2em;
+
+  .row {
+    word-break: break-word;
+    text-align: left;
+  }
+}
+
+.txt-showonly {
+  .k-input {
+    border: 0px;
+  }
+
+  .k-input-inner {
+    text-align: right;
+  }
+
+  .k-input-separator {
+    border-color: rgba(0, 0, 0, 0.16);
+  }
+}

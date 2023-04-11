@@ -1,0 +1,16 @@
+type DepositBalance @entity {
+  id: ID!
+  tokenBalance:BigInt!
+}
+
+type DepositCount   @entity {
+  id: ID!
+  count: BigInt!
+}
+
+type AddEarnEntity   @entity {
+  id: ID!
+  usd: BigInt!
+  amount: BigInt!
+  timestamp :BigInt!
+}

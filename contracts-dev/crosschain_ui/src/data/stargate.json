@@ -1,0 +1,111 @@
+{
+  "ethereum": {
+    "name": "Ethereum Mainnet",
+    "chainId": 101,
+    "feeLibrary": "0xDBF50791d09603915Bd066354A5B45775CfaD924",
+    "symbol": "Ether",
+    "token": [
+      {
+        "name": "USDT",
+        "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+        "pool": "0x38ea452219524bb87e18de1c24d3bb59510bd783",
+        "poolId": 2
+      },
+      {
+        "name": "USDC",
+        "address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+        "pool": "0xdf0770df86a8034b3efef0a1bb3c889b8332ff56",
+        "poolId": 1
+      }
+    ]
+  },
+  "bsc": {
+    "name": "BSC Mainnet",
+    "chainId": 102,
+    "feeLibrary": "0xcbff39d34789f5d3a8d305e7b804f272e5fd7361",
+    "StargateRouter": "0x4a364f8c717cAAD9A442737Eb7b8A55cc6cf18D8",
+    "symbol": "BNB",
+    "rpcUrl": "https://bsc-dataseed.binance.org/",
+    "token": [
+      {
+        "name": "USDT",
+        "address": "0x55d398326f99059ff775485246999027b3197955",
+        "pool": "0x9aa83081aa06af7208dcc7a4cb72c94d057d2cda",
+        "poolId": 2
+      },
+      {
+        "name": "BUSD",
+        "address": "0xe9e7cea3dedca5984780bafc599bd69add087d56",
+        "pool": "0x98a5737749490856b401db5dc27f522fc314a4e1",
+        "poolId": 5
+      }
+    ]
+  },
+  "polygon": {
+    "name": "Polygon",
+    "chainId": 109,
+    "feeLibrary": "0xd46ccf40d6dd371ade5c9d0e8f83354cf62285ed",
+    "symbol": "MATIC",
+    "dstGasForCall": 150000,
+    "token": [
+      {
+        "name": "USDT",
+        "address": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
+        "pool": "0x29e38769f23701a2e4a8ef0492e19da4604be62c",
+        "poolId": 2
+      },
+      {
+        "name": "USDC",
+        "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+        "pool": "0x1205f31718499dbf1fca446663b532ef87481fe1",
+        "poolId": 1
+      }
+    ]
+  },
+  "bscTestnet": {
+    "name": "BSC Testnet",
+    "chainId": 10102,
+    "feeLibrary": "0xAa70510cC5da7a0A8818Be7D7D2cF2E82D5aEAF7",
+    "StargateRouter": "0xbB0f1be1E9CE9cB27EA5b0c3a85B7cc3381d8176",
+    "symbol": "BNB",
+    "rpcUrl": "https://data-seed-prebsc-1-s1.binance.org:8545/",
+    "token": [
+      {
+        "name": "USDT",
+        "address": "0xF49E250aEB5abDf660d643583AdFd0be41464EfD",
+        "pool": "0x76f5d2d38c1e3ceceffcc6ccd0a4fc541f995c5b",
+        "poolId": 2
+      }
+    ]
+  },
+  "mumbai": {
+    "name": "Mumbai Testnet",
+    "chainId": 10109,
+    "feeLibrary": "0x309258559afEaaAbB45184bCBa854bBFda32881b",
+    "symbol": "MATIC",
+    "dstGasForCall": 20000,
+    "token": [
+      {
+        "name": "USDC",
+        "address": "0x742DfA5Aa70a8212857966D491D67B09Ce7D6ec7",
+        "pool": "0xfc0fd6425c6ffe98e4eae17443c10f5ddbdaaec3",
+        "poolId": 1
+      }
+    ]
+  },
+  "fuji": {
+    "name": "Avalanche Fuji Testnet",
+    "chainId": 10106,
+    "feeLibrary": "0x397c9Df58f8e01F38cfaC625cf736F0716f093C8",
+    "symbol": "AVAX",
+    "dstGasForCall": 20000,
+    "token": [
+      {
+        "name": "USDC",
+        "address": "0x4A0D1092E9df255cf95D72834Ea9255132782318",
+        "pool": "0xf14b09e2524855460d3a2cf7e682b8e8b1ba0f35",
+        "poolId": 1
+      }
+    ]
+  }
+}

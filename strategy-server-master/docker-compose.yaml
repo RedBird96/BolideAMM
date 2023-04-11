@@ -1,0 +1,45 @@
+version: '3.7'
+services:
+  redis:
+    image: redis:6.0
+    command: ['redis-server', '--appendonly', 'yes']
+    hostname: redis
+    ports:
+      - 6379:6379
+  postgres:
+    image: postgres:13
+    ports:
+      - '35432:5432'
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: strategy_bolide_local
+    volumes:
+      - postgres_database:/var/lib/postgresql/data:Z
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    volumes:
+      - ./:/usr/src/app
+      - /usr/src/app/node_modules
+    ports:
+      - '3000:3000'
+    env_file:
+      - .development.env
+    stdin_open: true
+    tty: true
+    links:
+      - redis
+      - postgres
+    depends_on:
+      - redis
+      - postgres
+    environment:
+      - WAIT_SLEEP_INTERVAL=3
+      - WAIT_AFTER_HOSTS=5
+      - WAIT_HOSTS_TIMEOUT=60
+      - WAIT_HOSTS=redis:6379,postgres:5432
+volumes:
+  postgres_database:
+    external: true

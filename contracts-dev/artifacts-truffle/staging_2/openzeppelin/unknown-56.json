@@ -1,0 +1,247 @@
+{
+  "manifestVersion": "3.2",
+  "admin": {
+    "address": "0x8Cea1241dd2FeF4c3ECc342D5f3405Cd421aC578",
+    "txHash": "0x739b567ca6bee7cfd41193c0fd4b1b05c866c4c006d2e306952e12bf42c5f9bd"
+  },
+  "proxies": [
+    {
+      "address": "0x456D2400bd77fDAf05cC0C38d09a52A7Ec13b828",
+      "txHash": "0x748e5d238f10f1ea221641c07fb13d02aee7720340635a669b66e20a115a590f",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "323de37a8beee5f4ef0a601d2fee14226143a4f0b2596f0b7fa844f016346abb": {
+      "address": "0x3fedb3C467f0a4cD3fd6Fb23055c25BF137794f7",
+      "txHash": "0x3cf73b195ea270ec8177b10a73903eb3c85bb1312133ed6da01d69852477d306",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_bool",
+            "src": "../@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:39"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "../@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:44"
+          },
+          {
+            "contract": "ContextUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "../@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:36"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "_owner",
+            "type": "t_address",
+            "src": "../@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:22"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "../@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:87"
+          },
+          {
+            "contract": "PausableUpgradeable",
+            "label": "_paused",
+            "type": "t_bool",
+            "src": "../@openzeppelin/contracts-upgradeable/security/PausableUpgradeable.sol:29"
+          },
+          {
+            "contract": "PausableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "../@openzeppelin/contracts-upgradeable/security/PausableUpgradeable.sol:102"
+          },
+          {
+            "contract": "StorageV2",
+            "label": "earnBLID",
+            "type": "t_mapping(t_uint256,t_struct(EarnBLID)1280_storage)",
+            "src": "../@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol:28"
+          },
+          {
+            "contract": "StorageV2",
+            "label": "countEarns",
+            "type": "t_uint256",
+            "src": "../@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol:28"
+          },
+          {
+            "contract": "StorageV2",
+            "label": "countTokens",
+            "type": "t_uint256",
+            "src": "../@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol:28"
+          },
+          {
+            "contract": "StorageV2",
+            "label": "tokens",
+            "type": "t_mapping(t_uint256,t_address)",
+            "src": "../@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol:28"
+          },
+          {
+            "contract": "StorageV2",
+            "label": "tokenBalance",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "../@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol:28"
+          },
+          {
+            "contract": "StorageV2",
+            "label": "oracles",
+            "type": "t_mapping(t_address,t_address)",
+            "src": "../@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol:28"
+          },
+          {
+            "contract": "StorageV2",
+            "label": "tokensAdd",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "../@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol:28"
+          },
+          {
+            "contract": "StorageV2",
+            "label": "deposits",
+            "type": "t_mapping(t_address,t_struct(DepositStruct)1267_storage)",
+            "src": "../@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol:28"
+          },
+          {
+            "contract": "StorageV2",
+            "label": "tokenDeposited",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "../@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol:28"
+          },
+          {
+            "contract": "StorageV2",
+            "label": "tokenTime",
+            "type": "t_mapping(t_address,t_int256)",
+            "src": "../@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol:28"
+          },
+          {
+            "contract": "StorageV2",
+            "label": "reserveBLID",
+            "type": "t_uint256",
+            "src": "../@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol:28"
+          },
+          {
+            "contract": "StorageV2",
+            "label": "logicContract",
+            "type": "t_address",
+            "src": "../@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol:28"
+          },
+          {
+            "contract": "StorageV2",
+            "label": "BLID",
+            "type": "t_address",
+            "src": "../@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol:28"
+          },
+          {
+            "contract": "StorageV2",
+            "label": "accumulatedRewardsPerShare",
+            "type": "t_mapping(t_address,t_mapping(t_uint256,t_uint256))",
+            "src": "../@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol:28"
+          }
+        ],
+        "types": {
+          "t_mapping(t_uint256,t_struct(EarnBLID)1280_storage)": {
+            "label": "mapping(uint256 => struct StorageV2.EarnBLID)"
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_struct(EarnBLID)1280_storage": {
+            "label": "struct StorageV2.EarnBLID",
+            "members": [
+              {
+                "label": "allBLID",
+                "type": "t_uint256"
+              },
+              {
+                "label": "timestamp",
+                "type": "t_uint256"
+              },
+              {
+                "label": "usd",
+                "type": "t_uint256"
+              },
+              {
+                "label": "tdt",
+                "type": "t_uint256"
+              },
+              {
+                "label": "rates",
+                "type": "t_mapping(t_address,t_uint256)"
+              }
+            ]
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)"
+          },
+          "t_address": {
+            "label": "address"
+          },
+          "t_mapping(t_uint256,t_address)": {
+            "label": "mapping(uint256 => address)"
+          },
+          "t_mapping(t_address,t_address)": {
+            "label": "mapping(address => address)"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)"
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_mapping(t_address,t_struct(DepositStruct)1267_storage)": {
+            "label": "mapping(address => struct StorageV2.DepositStruct)"
+          },
+          "t_struct(DepositStruct)1267_storage": {
+            "label": "struct StorageV2.DepositStruct",
+            "members": [
+              {
+                "label": "amount",
+                "type": "t_mapping(t_address,t_uint256)"
+              },
+              {
+                "label": "tokenTime",
+                "type": "t_mapping(t_address,t_int256)"
+              },
+              {
+                "label": "iterate",
+                "type": "t_uint256"
+              },
+              {
+                "label": "balanceBLID",
+                "type": "t_uint256"
+              },
+              {
+                "label": "depositIterate",
+                "type": "t_mapping(t_address,t_uint256)"
+              }
+            ]
+          },
+          "t_mapping(t_address,t_int256)": {
+            "label": "mapping(address => int256)"
+          },
+          "t_int256": {
+            "label": "int256"
+          },
+          "t_mapping(t_address,t_mapping(t_uint256,t_uint256))": {
+            "label": "mapping(address => mapping(uint256 => uint256))"
+          },
+          "t_mapping(t_uint256,t_uint256)": {
+            "label": "mapping(uint256 => uint256)"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          }
+        }
+      }
+    }
+  }
+}

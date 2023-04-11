@@ -1,0 +1,3 @@
+[submodule "contract_artifacts"]
+	path = contract_artifacts
+	url = git@github.com:bolide-fi/contract-artifacts.git

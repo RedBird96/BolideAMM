@@ -1,0 +1,14 @@
+{
+  "name": "blid",
+  "license": "UNLICENSED",
+  "scripts": {
+    "build": "source .env && envsubst < _subgraph.yaml > subgraph.yaml && graph codegen && graph build",
+    "deploy": "graph deploy --product hosted-service"
+  },
+  "dependencies": {
+    "@graphprotocol/graph-cli": "0.22.1"
+  },
+  "devDependencies": {
+    "@graphprotocol/graph-ts": "^0.24.1"
+  }
+}

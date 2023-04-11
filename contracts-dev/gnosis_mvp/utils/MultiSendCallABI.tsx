@@ -1,0 +1,14 @@
+export const MultiSendCallABI = [
+    {
+        "inputs":[
+            {
+                "internalType":"bytes",
+                "name":"transactions",
+                "type":"bytes"
+            }],
+        "name":"multiSend",
+        "outputs":[],
+        "stateMutability":"payable",
+        "type":"function"
+    }
+];

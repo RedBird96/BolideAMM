@@ -1,0 +1,11 @@
+version: "3.7"
+services:
+  app:
+    environment:
+      - NODE_ENV=test
+      - DB_HOST=postgres
+      - DB_PORT=5432
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=strategy_server_local_test
+    command: bash -c "/wait && npm run test"

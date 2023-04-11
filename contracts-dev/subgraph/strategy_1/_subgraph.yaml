@@ -1,0 +1,54 @@
+specVersion: 0.0.2
+schema:
+  file: ./schema.graphql
+dataSources:
+  - kind: ethereum/contract
+    name: Storage
+    network: bsc
+    source:
+      address: $STORAGE_ADDRESS
+      abi: Storage
+      startBlock: $STORAGE_START_BLOCK
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.5
+      language: wasm/assemblyscript
+      entities:
+        - AddEarn
+        - Deposit
+        - InterestFee
+        - OwnershipTransferred
+        - Paused
+        - ReturnToken
+        - TakeToken
+        - Unpaused
+        - UpdateBLIDBalance
+        - UpdateTokenBalance
+        - Withdraw
+      abis:
+        - name: Storage
+          file: ./abis/Storage.json
+      eventHandlers:
+        - event: AddEarn(uint256)
+          handler: handleAddEarn
+        - event: Deposit(address,address,uint256)
+          handler: handleDeposit
+        - event: InterestFee(address,uint256)
+          handler: handleInterestFee
+        - event: OwnershipTransferred(indexed address,indexed address)
+          handler: handleOwnershipTransferred
+        - event: Paused(address)
+          handler: handlePaused
+        - event: ReturnToken(address,uint256)
+          handler: handleReturnToken
+        - event: TakeToken(address,uint256)
+          handler: handleTakeToken
+        - event: Unpaused(address)
+          handler: handleUnpaused
+        - event: UpdateBLIDBalance(uint256)
+          handler: handleUpdateBLIDBalance
+        - event: UpdateTokenBalance(uint256,address)
+          handler: handleUpdateTokenBalance
+        - event: Withdraw(address,address,uint256)
+          handler: handleWithdraw
+      file: ./src/mapping.ts

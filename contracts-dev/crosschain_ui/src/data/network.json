@@ -1,0 +1,35 @@
+{
+  "polygon": {
+    "chainId": "0x89",
+    "rpcUrls": ["https://polygon-rpc.com/"],
+    "chainName": "Polygon Mainnet",
+    "nativeCurrency": {
+      "name": "MATIC",
+      "symbol": "MATIC",
+      "decimals": 18
+    },
+    "blockExplorerUrls": ["https://polygonscan.com/"]
+  },
+  "mumbai": {
+    "chainId": "0x13881",
+    "rpcUrls": ["https://rpc-mumbai.maticvigil.com/"],
+    "chainName": "Mumbai Testnet",
+    "nativeCurrency": {
+      "name": "MATIC",
+      "symbol": "MATIC",
+      "decimals": 18
+    },
+    "blockExplorerUrls": ["https://mumbai.polygonscan.com/"]
+  },
+  "fuji": {
+    "chainId": "0xa869",
+    "rpcUrls": ["https://api.avax-test.network/ext/bc/C/rpc"],
+    "chainName": "Avalanche Fuji Testnet",
+    "nativeCurrency": {
+      "name": "AVAX",
+      "symbol": "AVAX",
+      "decimals": 18
+    },
+    "blockExplorerUrls": ["https://testnet.snowtrace.io/"]
+  }
+}

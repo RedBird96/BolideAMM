@@ -1,0 +1,726 @@
+{
+  "PLATFORM": {
+    "bsc": {
+      "blid": "0x766afcf83fd5eaf884b3d529b432ca27a6d84617",
+      "expenses": "0xbC70F9E663F4b79De2DaFeD45EB524fe1356AC3e",
+      "boosting": "0x0ee3C7262AB046Fd259Ed93C053BD99B9e617b82"
+    },
+    "bscDev": {
+      "blid": "0x32Ee7c89D689CE87cB3419fD0F184dc6881Ab3C7",
+      "expenses": "0x48e5AE7Ffa455673AA24760024C7D4E4794c370C",
+      "boosting": "0x724dA4c79F7441530284A30F0470668dcc3Be9dE"
+    },
+    "bscTestnet": {
+      "blid": "0xCc2257Aa00DC39279A168BfD30760591dc58342A",
+      "expenses": "0x48e5AE7Ffa455673AA24760024C7D4E4794c370C",
+      "boosting": "0x35b1492E8313CC784b4eF29bF7D3Bbe7f37BB140"
+    },
+    "goerli": {
+      "blid": "0xd54A0F351c52bc546fCBD2Be33C51004675F3Be1",
+      "expenses": "0xa7e21fabEC16A185Acae3AB3d004DF84b23C3501",
+      "boosting": "0x35b1492E8313CC784b4eF29bF7D3Bbe7f37BB140"
+    }
+  },
+  "ADDRESS_COLLECTION": {
+    "bsc": {
+      "VenusController": "0xfD36E2c2a6789Db23113685031d7F16329158384",
+      "OlaController": "0xAD48B2C9DC6709a560018c678e918253a65df86e",
+      "OlaRainMaker": "0x5CB93C0AdE6B7F2760Ec4389833B0cCcb5e4efDa",
+      "PancakeRouter": "0x10ED43C718714eb63d5aA57B78B54704E256024E",
+      "ApeswapRouter": "0xcF0feBd3f17CEf5b47b0cD257aCf6025c5BFf3b7",
+      "BiswapRouter": "0x3a6d8cA21D1CF76F653A67577FA0D27453350dD8",
+      "PancakeMasterV2": "0xa5f8c5dbd5f286960b9d90548680ae5ebff07652",
+      "ApeswapMaster": "0x5c8D727b265DBAfaba67E050f2f739cAeEB4A6F9",
+      "BiswapMaster": "0xDbc1A13490deeF9c3C12b44FE77b503c1B061739",
+      "VenusOraclePrice" : "0x516c18DC440f107f12619a6d2cc320622807d0eE",
+      "Token": {
+        "BTCB": {
+          "Underlying": "0x7130d2A12B9BCbFAe4f2634d864A1Ee1Ce3Ead9c",
+          "Venus": "0x882c173bc7ff3b7786ca16dfed3dfffb9ee7847b",
+          "Ola": "0x5fce5D208DC325ff602c77497dC18F8EAdac8ADA"
+        },
+        "BANANA": {
+          "Underlying": "0x603c7f932ED1fc6575303D8Fb018fDCBb0f39a95",
+          "Venus": "",
+          "Ola": "0xC2E840BdD02B4a1d970C87A912D8576a7e61D314"
+        },
+        "BNB": {
+          "Underlying": "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
+          "Venus": "0xA07c5b74C9B40447a954e1466938b865b6BBea36",
+          "Ola": "0x34878F6a484005AA90E7188a546Ea9E52b538F6f"
+        },
+        "USDT": {
+          "Underlying": "0x55d398326f99059ff775485246999027b3197955",
+          "Venus": "0xfD5840Cd36d94D7229439859C0112a4185BC0255",
+          "Ola": "0xdBFd516D42743CA3f1C555311F7846095D85F6Fd"
+        },
+        "BUSD": {
+          "Underlying": "0xe9e7cea3dedca5984780bafc599bd69add087d56",
+          "Venus": "0x95c78222B3D6e262426483D42CfA53685A67Ab9D",
+          "Ola": "0x0096B6B49D13b347033438c4a699df3Afd9d2f96"
+        },
+        "SXP": {
+          "Underlying": "0x47BEAd2563dCBf3bF2c9407fEa4dC236fAbA485A",
+          "Venus": "0x2fF3d0F6990a40261c66E1ff2017aCBc282EB6d0",
+          "Ola": ""
+        },
+        "XVS": {
+          "Underlying": "0xcf6bb5389c92bdda8a3747ddb454cb7a64626c63",
+          "Venus": "0x151B1e2635A717bcDc836ECd6FbB62B674FE3E1D",
+          "Ola": ""
+        },
+        "TUSD": {
+          "Underlying": "0x14016E85a25aeb13065688cAFB43044C2ef86784",
+          "Venus": "0x08ceb3f4a7ed3500ca0982bcd0fc7816688084c3",
+          "Ola": ""
+        },
+        "DOT": {
+          "Underlying": "0x7083609fCE4d1d8Dc0C979AAb8c869Ea2C873402",
+          "Venus": "0x1610bc33319e9398de5f57b33a5b184c806ad217",
+          "Ola": "0x92D106c39aC068EB113B3Ecb3273B23Cd19e6e26"
+        },
+        "DAI": {
+          "Underlying": "0x1AF3F329e8BE154074D8769D1FFa4eE058B1DBc3",
+          "Venus": "0x334b3ecb4dca3593bccc3c7ebd1a1c1d1780fbf1",
+          "Ola": ""
+        },
+        "LTC": {
+          "Underlying": "0x4338665CBB7B2485A8855A139b75D5e34AB0DB94",
+          "Venus": "0x57a5297f2cb2c0aac9d554660acd6d385ab50c6b",
+          "Ola": ""
+        },
+        "BCH": {
+          "Underlying": "0x8fF795a6F4D97E7887C79beA79aba5cc76444aDf",
+          "Venus": "0x5f0388ebc2b94fa8e123f404b79ccf5f40b29176",
+          "Ola": ""
+        },
+        "TRX": {
+          "Underlying": "0x85EAC5Ac2F758618dFa09bDbe0cf174e7d574D5B",
+          "Venus": "0x61edcfe8dd6ba3c891cb9bec2dc7657b3b422e93",
+          "Ola": ""
+        },
+        "LINK": {
+          "Underlying": "0xF8A0BF9cF54Bb92F17374d9e9A321E6a111a51bD",
+          "Venus": "0x650b940a1033b8a1b1873f78730fcfc73ec11f1f",
+          "Ola": ""
+        },
+        "CAKE": {
+          "Underlying": "0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82",
+          "Venus": "0x86aC3974e2BD0d60825230fa6F355fF11409df5c",
+          "Ola": "0x3353f5bcfD7E4b146F2eD8F1e8D875733Cd754a7"
+        },
+        "BETH": {
+          "Underlying": "0x250632378E573c6Be1AC2f97Fcdf00515d0Aa91B",
+          "Venus": "0x972207a639cc1b374b893cc33fa251b55ceb7c07",
+          "Ola": ""
+        },
+        "ADA": {
+          "Underlying": "0x3EE2200Efb3400fAbB9AacF31297cBdD1d435D47",
+          "Venus": "0x9a0af7fdb2065ce470d72664de73cae409da28ec",
+          "Ola": ""
+        },
+        "XRP": {
+          "Underlying": "0x1D2F0da169ceB9fC7B3144628dB156f3F6c60dBE",
+          "Venus": "0xb248a295732e0225acd3337607cc01068e3b9c10",
+          "Ola": ""
+        },
+        "DOGE": {
+          "Underlying": "0xbA2aE424d960c26247Dd6c32edC70B295c744C43",
+          "Venus": "0xec3422ef92b2fb59e84c8b02ba73f1fe84ed8d71",
+          "Ola": ""
+        },
+        "USDC": {
+          "Underlying": "0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d",
+          "Venus": "0xeca88125a5adbe82614ffc12d0db554e2e2867c8",
+          "Ola": "0x91B66a9Ef4f4CAD7F8AF942855C37Dd53520f151"
+        },
+        "ETH": {
+          "Underlying": "0x2170Ed0880ac9A755fd29B2688956BD959F933F8",
+          "Venus": "0xf508fcd89b8bd15579dc79a6827cb4686a3592c8",
+          "Ola": "0xaA1b1E1f251610aE10E4D553b05C662e60992EEd"
+        },
+        "FIL": {
+          "Underlying": "0x0D8Ce2A99Bb6e3B7Db580eD848240e4a0F9aE153",
+          "Venus": "0xf91d58b5ae142dacc749f58a49fcbac340cb0343",
+          "Ola": ""
+        },
+        "MATIC": {
+          "Underlying": "0xcc42724c6683b7e57334c4e856f4c9965ed682bd",
+          "Venus": "0x5c9476fcd6a4f9a3654139721c949c2233bbbbc8",
+          "Ola": ""
+        },
+        "AAVE": {
+          "Underlying": "0xfb6115445Bff7b52FeB98650C87f44907E58f802",
+          "Venus": "0x26DA28954763B92139ED49283625ceCAf52C6f94",
+          "Ola": ""
+        },
+        "CAN": {
+          "Underlying": "0x20bff4bbEDa07536FF00e073bd8359E5D80D733d",
+          "Venus": "0xeBD0070237a0713E8D94fEf1B728d3d993d290ef",
+          "Ola": ""
+        },
+        "BSW": {
+          "Underlying": "0x965F527D9159dCe6288a2219DB51fc6Eef120dD1",
+          "Venus": "",
+          "Ola": ""
+        }
+      },
+      "SWAP": {
+        "Pancake": {
+          "USDT_BNB": {
+            "LP": "0x16b9a82891338f9bA80E2D6970FddA79D1eb0daE",
+            "PoolIDV1": "264",
+            "PoolIDV2": "13"
+          },
+          "XRP_BNB": {
+            "LP": "0x03F18135c44C64ebFdCBad8297fe5bDafdBbdd86",
+            "PoolIDV1": "265",
+            "PoolIDV2": "14"
+          },
+          "DOT_BNB": {
+            "LP": "0xDd5bAd8f8b360d76d12FdA230F8BAF42fe0022CF",
+            "PoolIDV1": "255",
+            "PoolIDV2": "5"
+          },
+          "ADA-BNB": {
+            "LP": "0x28415ff2C35b65B9E5c7de82126b4015ab9d031F",
+            "PoolIDV1": "",
+            "PoolIDV2": ""
+          },
+          "BNB-LINK": {
+            "LP": "0x824eb9faDFb377394430d2744fa7C42916DE3eCe",
+            "PoolIDV1": "",
+            "PoolIDV2": ""
+          },
+          "ETH-BNB": {
+            "LP": "0x74E4716E431f45807DCF19f284c7aA99F18a4fbc",
+            "PoolIDV1": "",
+            "PoolIDV2": ""
+          },
+          "BTC-BNB": {
+            "LP": "0x61EB789d75A95CAa3fF50ed7E47b96c132fEc082",
+            "PoolIDV1": "",
+            "PoolIDV2": ""
+          },
+          "SXP-BNB": {
+            "LP": "0xD8E2F8b6Db204c405543953Ef6359912FE3A88d6",
+            "PoolIDV1": "",
+            "PoolIDV2": ""
+          },
+          "LTC-BNB": {
+            "LP": "0x71b01eBdDD797c8E9E0b003ea2f4FD207fBF46cC",
+            "PoolIDV1": "",
+            "PoolIDV2": ""
+          },
+          "DOGE-BNB": {
+            "LP": "0xac109C8025F272414fd9e2faA805a583708A017f",
+            "PoolIDV1": "",
+            "PoolIDV2": ""
+          },
+          "ETH-BTC": {
+            "LP": "0xD171B26E4484402de70e3Ea256bE5A2630d7e88D",
+            "PoolIDV1": "",
+            "PoolIDV2": ""
+          }
+        },
+        "Ape": {
+          "XRP-BNB": {
+            "LP": "0x6f0f18f5fcC1466ec41c8106689e10BeFE68D1c0",
+            "PoolID": "32"
+          },
+          "BTC-BNB": {
+            "LP": "0x1E1aFE9D9c5f290d8F6996dDB190bd111908A43D",
+            "PoolID": ""
+          },
+          "ETH-BNB": {
+            "LP": "0xA0C3Ef24414ED9C9B456740128d8E63D016A9e11",
+            "PoolID": ""
+          },
+          "ADA-BNB": {
+            "LP": "0x40d4543887E4170A1A40Cd8dB15A6b297c812Cb1",
+            "PoolID": ""
+          },
+          "ETH-ADA": {
+            "LP": "0x61FE209E404166a53Cc627d0ae30A65606315dA7",
+            "PoolID": ""
+          },
+          "BNB-LINK": {
+            "LP": "0x092ADA3818DB7FBb8e0A2124Ff218C5125C1CcE6",
+            "PoolID": ""
+          },
+          "LTC-BNB": {
+            "LP": "0x0F12362c017Fe5101c7bBa09390f1CB729f5B318",
+            "PoolID": ""
+          },
+          "BNB-MATIC": {
+            "LP": "0x29A4A3D77c010CE100A45831BF7e798f0f0B325D",
+            "PoolID": ""
+          },
+          "FIL-BNB": {
+            "LP": "0xcAEC8648dbaC41b6504A8E408892931796D67d87",
+            "PoolID": ""
+          }
+        },
+        "BiSwap": {
+          "USDT-BNB": {
+            "LP": "0x8840C6252e2e86e545deFb6da98B2a0E26d8C1BA",
+            "PoolID": ""
+          },
+          "ETH-BTC": {
+            "LP": "0x6216E04cd40DB2c6FBEd64f1B5830A98D3A91740",
+            "PoolID": ""
+          },
+          "BTC-BNB": {
+            "LP": "0xC7e9d76ba11099AF3F330ff829c5F442d571e057",
+            "PoolID": ""
+          },
+          "ETH-BNB": {
+            "LP": "0x5bf6941f029424674bb93A43b79fc46bF4A67c21",
+            "PoolID": ""
+          },
+          "ADA-BNB": {
+            "LP": "0x8860922Eb2795aB0D57363653Dd7EBf18D7c0A42",
+            "PoolID": ""
+          },
+          "XRP-BNB": {
+            "LP": "0x5dc30Bb8D7F02eFEf28f7E637D17Aea13Fa96906",
+            "PoolID": ""
+          },
+          "DOGE-BNB": {
+            "LP": "0x1eF315fa08e0E1B116D97E3dFE0aF292Ed8b7f02",
+            "PoolID": ""
+          },
+          "BNB-LINK": {
+            "LP": "0x16Fe21c91c426E603977b1C6EcD59Fc510a518C2",
+            "PoolID": ""
+          },
+          "SXP-BNB": {
+            "LP": "0xedc3f1edB8811d2aE4aD6666D77521ae817F2ef1",
+            "PoolID": ""
+          },
+          "BNB-MATIC": {
+            "LP": "0x3B09e13Ca9189FBD6a196cfE5FbD477C885afBf3",
+            "PoolID": ""
+          }
+        }
+      },
+      "CHAINLINK": {
+        "BUSD": "0xcBb98864Ef56E9042e7d2efef76141f15731B82f",
+        "USDT": "0xB97Ad0E74fa7d920791E90258A6E2085088b4320",
+        "USDC": "0x51597f405303C4377E36123cBc172b13269EA163",
+        "DAI": "0x132d3C0B1D2cEa0BC552588063bdBb210FDeecfA",
+        "BTC": "0x264990fbd0A4796A3E3d8E37C4d5F87a3aCa5Ebf",
+        "ETH": "0x9ef1B8c0E4F7dc8bF5719Ea496883DC6401d5b2e",
+        "BNB": "0x0567F2323251f0Aab15c8dFb1967E4e8A7D42aeE",
+        "XRP": "0x93A67D414896A280bF8FFB3b389fE3686E014fda",
+        "SXP": "0xe188a9875af525d25334d75f3327863b2b8cd0f1",
+        "BCH": "0x43d80f616daf0b0b42a928eed32147dc59027d41",
+        "LINK": "0xca236e327f629f9fc2c30a4e95775ebf0b89fac8",
+        "DOT": "0xc333eb0086309a16aa7c8308dfd32c8bba0a2592",
+        "LTC": "0x74e72f37a8c415c8f1a98ed42e78ff997435791d",
+        "FIL": "0xe5dbfd9003bff9df5feb2f4f445ca00fb121fb83",
+        "MATIC": "0x7CA57b0cA6367191c94C8914d7Df09A57655905f"
+      }
+    },
+    "bscTestnet": {
+      "VenusController": "0x94d1820b2D1c7c7452A163983Dc888CEC546b77D",
+      "OlaController": "0xb3BEf8955E047B734EBBe6903eD2e3C467cBC0bb",
+      "OlaRainMaker": "0xb3BEf8955E047B734EBBe6903eD2e3C467cBC0bb",
+      "PancakeRouter": "0xD99D1c33F9fC3444f8101754aBC46c52416550D1",
+      "ApeswapRouter": "0x1b02dA8Cb0d097eB8D57A175b88c7D8b47997506",
+      "BiswapRouter": "0x3a6d8cA21D1CF76F653A67577FA0D27453350dD8",
+      "PancakeMasterV1": "0xd4F218e2C7c044c49D301059e718806D00E071b9",
+      "PancakeMasterV2": "0xd4F218e2C7c044c49D301059e718806D00E071b9",
+      "ApeswapMaster": "0xc35DADB65012eC5796536bD9864eD8773aBc74C4",
+      "BiswapMaster": "0xDbc1A13490deeF9c3C12b44FE77b503c1B061739",
+      "VenusOraclePrice" : "0xd61c7Fa07dF7241812eA6D21744a61f1257D1818",
+      "Token": {
+        "CAKE": {
+          "Underlying": "0xFa60D973F7642B748046464e165A65B7323b0DEE",
+          "Venus": "",
+          "Ola": ""
+        },
+        "BANANA": {
+          "Underlying": "0xB9e0E753630434d7863528cc73CB7AC638a7c8ff",
+          "Venus": "",
+          "Ola": ""
+        },
+        "SYRUP": {
+          "Underlying": "0xDd09993d7048fF843Daf08313597c2Ead1234887",
+          "Venus": "",
+          "Ola": ""
+        },
+        "SXP": {
+          "Underlying": "0x75107940Cf1121232C0559c747A986DEfbc69DA9",
+          "Venus": "0x74469281310195A04840Daf6EdF576F559a3dE80",
+          "Ola": ""
+        },
+        "BNB": {
+          "Underlying": "0xae13d989dac2f0debff460ac112a837c89baa7cd",
+          "Venus": "0x2E7222e51c0f6e98610A1543Aa3836E092CDe62c",
+          "Ola": ""
+        },
+        "BUSD": {
+          "Underlying": "0x8301F2213c0eeD49a7E28Ae4c3e91722919B8B47",
+          "Venus": "0x08e0A5575De71037aE36AbfAfb516595fE68e5e4",
+          "Ola": ""
+        },
+        "USDT": {
+          "Underlying": "0xA11c8D9DC9b66E209Ef60F0C8D969D3CD988782c",
+          "Venus": "0xb7526572FFE56AB9D7489838Bf2E18e3323b441A",
+          "Ola": ""
+        },
+        "USDC": {
+          "Underlying": "0x16227D60f7a0e586C66B005219dfc887D13C9531",
+          "Venus": "0xD5C4C2e2facBEB59D0216D0595d63FcDc6F9A1a7",
+          "Ola": ""
+        },
+        "XVS": {
+          "Underlying": "0xB9e0E753630434d7863528cc73CB7AC638a7c8ff",
+          "Venus": "0x6d6F697e34145Bb95c54E77482d97cc261Dc237E",
+          "Ola": ""
+        }
+      },
+      "SWAP": {
+        "Pancake": {
+          "BNB_BLID": {
+            "LP": "0x363fc21c3d45339f7b7e1f4751722de579ee4f33",
+            "PoolIDV1": "2",
+            "PoolIDV2": ""
+          },
+          "USDT_CAKE": {
+            "LP": "0x61dc93e9d79e5fe2699544a607183d9d2a97d631",
+            "PoolIDV1": "3",
+            "PoolIDV2": ""
+          },
+          "USDC_CAKE": {
+            "LP": "0x3b87e34a046fd5e77ebb00c3ac4edacd7c5ea676",
+            "PoolIDV1": "4",
+            "PoolIDV2": ""
+          },
+          "BUSD_CAKE": {
+            "LP": "0xb80df4ed7894bc7daf4d2635d0614a5b50228462",
+            "PoolIDV1": "5",
+            "PoolIDV2": ""
+          },
+          "SXP_CAKE": {
+            "LP": "0x29d0248aaab98004b5350869ea5f17630630147b",
+            "PoolIDV1": "6",
+            "PoolIDV2": ""
+          },
+          "BNB_CAKE": {
+            "LP": "0xa96818ca65b57bec2155ba5c81a70151f63300cd",
+            "PoolIDV1": "7",
+            "PoolIDV2": ""
+          },
+          "USDT_BNB": {
+            "LP": "0x97b0307973f6f662ff32720c6d57c6619e936319",
+            "PoolIDV1": "8",
+            "PoolIDV2": ""
+          },
+          "USDC_BNB": {
+            "LP": "0xd1d712395b1d018b02d231c355b3a3932f13b547",
+            "PoolIDV1": "9",
+            "PoolIDV2": ""
+          },
+          "BUSD_BNB": {
+            "LP": "0x23ec7009caba76d3a0756c98df6a650a3b0eac8e",
+            "PoolIDV1": "10",
+            "PoolIDV2": ""
+          },
+          "SXP_BNB": {
+            "LP": "0xc49b0eae6e5062b77377836313f0baa6996407e5",
+            "PoolIDV1": "11",
+            "PoolIDV2": ""
+          },
+          "BUSD_USDT": {
+            "LP": "0x392f0924d8a91b63b2b672ed2c3758fc690e27a4",
+            "PoolIDV1": "12",
+            "PoolIDV2": ""
+          },
+          "BUSD_USDC": {
+            "LP": "0x4a88a79744beff7f2d69f90640635f70d816cc04",
+            "PoolIDV1": "13",
+            "PoolIDV2": ""
+          },
+          "BUSD_SXP": {
+            "LP": "0xccb00936ca217f76ea50868d9bdddab26cbfc3c8",
+            "PoolIDV1": "14",
+            "PoolIDV2": ""
+          },
+          "USDT_USDC": {
+            "LP": "0x37417eec842915eee6df02c7deca0910e99ec135",
+            "PoolIDV1": "15",
+            "PoolIDV2": ""
+          },
+          "USDT_SXP": {
+            "LP": "0xcfa0a0fd30086649eeb4b7e5d2eb9ab8e444d840",
+            "PoolIDV1": "16",
+            "PoolIDV2": ""
+          },
+          "USDC_SXP": {
+            "LP": "0x6c755b95946fa51627f74f0a3c168e7c53697dae",
+            "PoolIDV1": "17",
+            "PoolIDV2": ""
+          }
+        }
+      },
+      "CHAINLINK": {
+        "BUSD": "0x9331b55D9830EF609A2aBCfAc0FBCE050A52fdEa",
+        "USDT": "0xEca2605f0BCF2BA5966372C99837b1F182d3D620",
+        "USDC": "0x90c069C4538adAc136E051052E14c1cD799C41B7",
+        "DAI": "0xE4eE17114774713d2De0eC0f035d4F7665fc025D",
+        "BTC": "0x5741306c21795FdCBb9b265Ea0255F499DFe515C",
+        "ETH": "0x143db3CEEfbdfe5631aDD3E50f7614B6ba708BA7",
+        "BNB": "0x2514895c72f50D8bd4B4F9b1110F0D6bD2c97526",
+        "XRP": "0x4046332373C24Aed1dC8bAd489A04E187833B28d"
+      }
+    },
+    "eth": {
+      "VenusController": "0x3d9819210a31b4961b30ef54be2aed79b9c9cd3b",
+      "OlaController": "0x3d9819210a31b4961b30ef54be2aed79b9c9cd3b",
+      "OlaRainMaker": "0x3d9819210a31b4961b30ef54be2aed79b9c9cd3b",
+      "PancakeRouter": "0xd9e1cE17f2641f24aE83637ab66a2cca9C378B9F",
+      "ApeswapRouter": "0x5f509a3C3F16dF2Fba7bF84dEE1eFbce6BB85587",
+      "BiswapRouter": "0x3a6d8cA21D1CF76F653A67577FA0D27453350dD8",
+      "PancakeMasterV2": "0xa5f8c5dbd5f286960b9d90548680ae5ebff07652",
+      "ApeswapMaster": "0x5c8D727b265DBAfaba67E050f2f739cAeEB4A6F9",
+      "BiswapMaster": "0xDbc1A13490deeF9c3C12b44FE77b503c1B061739",
+      "Token": {
+        "BANANA": {
+          "Underlying": "0x92df60c51c710a1b1c20e42d85e221f3a1bfc7f2",
+          "Venus": "",
+          "Ola": "0xC2E840BdD02B4a1d970C87A912D8576a7e61D314"
+        },
+        "USDT": {
+          "Underlying": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+          "Venus": "0xf650c3d88d12db855b8bf7d11be6c55a4e07dcc9",
+          "Ola": "0xf650c3d88d12db855b8bf7d11be6c55a4e07dcc9"
+        },
+        "USDC": {
+          "Underlying": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+          "Venus": "0x39aa39c021dfbae8fac545936693ac917d5e7563",
+          "Ola": "0x39aa39c021dfbae8fac545936693ac917d5e7563"
+        },
+        "ETH": {
+          "Underlying": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "Venus": "0x4ddc2d193948926d02f9b1fe9e1daa0718270ed5",
+          "Ola": "0x4ddc2d193948926d02f9b1fe9e1daa0718270ed5"
+        },
+        "DAI": {
+          "Underlying": "0x6b175474e89094c44da98b954eedeac495271d0f",
+          "Venus": "0x5d3a536E4D6DbD6114cc1Ead35777bAB948E3643",
+          "Ola": "0x5d3a536E4D6DbD6114cc1Ead35777bAB948E3643"
+        },
+        "MRK": {
+          "Underlying": "0x9f8f72aa9304c8b593d555f12ef6589cc3a579a2",
+          "Venus": "0x95b4eF2869eBD94BEb4eEE400a99824BF5DC325b",
+          "Ola": "0x95b4eF2869eBD94BEb4eEE400a99824BF5DC325b"
+        },
+        "XVS": {
+          "Underlying": "0x68d8aaaecc18c05d5b635d189fbd436cf1d046f4",
+          "Venus": "",
+          "Ola": ""
+        }
+      },
+      "SWAP": {
+        "Pancake": {
+          "USDT_BNB": {
+            "LP": "0x16b9a82891338f9bA80E2D6970FddA79D1eb0daE",
+            "PoolIDV1": "264",
+            "PoolIDV2": "13"
+          },
+          "XRP_BNB": {
+            "LP": "0x03F18135c44C64ebFdCBad8297fe5bDafdBbdd86",
+            "PoolIDV1": "265",
+            "PoolIDV2": "14"
+          },
+          "DOT_BNB": {
+            "LP": "0xDd5bAd8f8b360d76d12FdA230F8BAF42fe0022CF",
+            "PoolIDV1": "255",
+            "PoolIDV2": "5"
+          }
+        },
+        "Sushi": {
+          "MRK_ETH": {
+            "LP": "0xBa13afEcda9beB75De5c56BbAF696b880a5A50dD",
+            "PoolID": "33"
+          },
+          "USDT_ETH": {
+            "LP": "0x06da0fd433C1A5d7a4faa01111c044910A184553",
+            "PoolID": "0"
+          }
+        }
+      },
+      "CHAINLINK": {
+        "BUSD": "0xcBb98864Ef56E9042e7d2efef76141f15731B82f",
+        "USDT": "0xB97Ad0E74fa7d920791E90258A6E2085088b4320",
+        "USDC": "0x51597f405303C4377E36123cBc172b13269EA163",
+        "DAI": "0x132d3C0B1D2cEa0BC552588063bdBb210FDeecfA",
+        "BTC": "0x264990fbd0A4796A3E3d8E37C4d5F87a3aCa5Ebf",
+        "ETH": "0x9ef1B8c0E4F7dc8bF5719Ea496883DC6401d5b2e",
+        "BNB": "0x0567F2323251f0Aab15c8dFb1967E4e8A7D42aeE",
+        "XRP": "0x93A67D414896A280bF8FFB3b389fE3686E014fda",
+        "SXP": "0xe188a9875af525d25334d75f3327863b2b8cd0f1",
+        "BCH": "0x43d80f616daf0b0b42a928eed32147dc59027d41",
+        "LINK": "0xca236e327f629f9fc2c30a4e95775ebf0b89fac8",
+        "DOT": "0xc333eb0086309a16aa7c8308dfd32c8bba0a2592",
+        "LTC": "0x74e72f37a8c415c8f1a98ed42e78ff997435791d",
+        "FIL": "0xe5dbfd9003bff9df5feb2f4f445ca00fb121fb83"
+      }
+    },
+    "goerli": {
+      "VenusController": "0x3cBe63aAcF6A064D32072a630A3eab7545C54d78",
+      "OlaController": "0x3cBe63aAcF6A064D32072a630A3eab7545C54d78",
+      "OlaRainMaker": "0x3cBe63aAcF6A064D32072a630A3eab7545C54d78",
+      "PancakeRouter": "0x1b02dA8Cb0d097eB8D57A175b88c7D8b47997506",
+      "ApeswapRouter": "0xcF0feBd3f17CEf5b47b0cD257aCf6025c5BFf3b7",
+      "BiswapRouter": "0x3a6d8cA21D1CF76F653A67577FA0D27453350dD8",
+      "PancakeMasterV2": "0x80C7DD17B01855a6D2347444a0FCC36136a314de",
+      "ApeswapMaster": "0x5c8D727b265DBAfaba67E050f2f739cAeEB4A6F9",
+      "BiswapMaster": "0xDbc1A13490deeF9c3C12b44FE77b503c1B061739",
+      "Token": {
+        "BANANA": {
+          "Underlying": "0x92df60c51c710a1b1c20e42d85e221f3a1bfc7f2",
+          "Venus": "",
+          "Ola": ""
+        },
+        "ETH": {
+          "Underlying": "0xB4FBF271143F4FBf7B91A5ded31805e42b2208d6",
+          "Venus": "0x64078a6189Bf45f80091c6Ff2fCEe1B15Ac8dbde",
+          "Ola": ""
+        },
+        "USDC": {
+          "Underlying": "0x07865c6E87B9F70255377e024ace6630C1Eaa37F",
+          "Venus": "0x73506770799Eb04befb5AaE4734e58C2C624F493",
+          "Ola": ""
+        },
+        "USDT": {
+          "Underlying": "0x79C950C7446B234a6Ad53B908fBF342b01c4d446",
+          "Venus": "0x5A74332C881Ea4844CcbD8458e0B6a9B04ddb716",
+          "Ola": ""
+        },
+        "UNI": {
+          "Underlying": "0x208F73527727bcB2D9ca9bA047E3979559EB08cC",
+          "Venus": "0x2073d38198511F5Ed8d893AB43A03bFDEae0b1A5",
+          "Ola": ""
+        },
+        "DAI": {
+          "Underlying": "0x2899a03ffDab5C90BADc5920b4f53B0884EB13cC",
+          "Venus": "0x0545a8eaF7ff6bB6F708CbB544EA55DBc2ad7b2a",
+          "Ola": ""
+        },
+        "WBTC": {
+          "Underlying": "0xAAD4992D949f9214458594dF92B44165Fb84dC19",
+          "Venus": "0xDa6F609F3636062E06fFB5a1701Df3c5F1ab3C8f",
+          "Ola": ""
+        }
+      },
+      "SWAP": {
+        "Sushi": {
+          "WBTC_USDC": {
+            "LP": "",
+            "PoolID": ""
+          },
+          "DAI_UNI": {
+            "LP": "",
+            "PoolID": ""
+          }
+        }
+      },
+      "CHAINLINK": {
+        "USDT": "",
+        "ETH": ""
+      }
+    }
+  },
+  "STARGATE_COLLECTION": {
+    "eth": {
+      "chainId": 101,
+      "StargateRouter": "0x8731d54E9D02c286767d56ac03e8037C07e01e98",
+      "feeLibrary": "0xDBF50791d09603915Bd066354A5B45775CfaD924",
+      "token": {
+        "USDT": {
+          "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+          "pool": "0x38ea452219524bb87e18de1c24d3bb59510bd783",
+          "poolId": 2
+        },
+        "USDC": {
+          "address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+          "pool": "0xdf0770df86a8034b3efef0a1bb3c889b8332ff56",
+          "poolId": 1
+        }
+      }
+    },
+    "bsc": {
+      "chainId": 102,
+      "StargateRouter": "0x4a364f8c717cAAD9A442737Eb7b8A55cc6cf18D8",
+      "feeLibrary": "0xcbff39d34789f5d3a8d305e7b804f272e5fd7361",
+      "token": {
+        "USDT": {
+          "address": "0x55d398326f99059ff775485246999027b3197955",
+          "pool": "0x9aa83081aa06af7208dcc7a4cb72c94d057d2cda",
+          "poolId": 2
+        },
+        "BUSD": {
+          "address": "0xe9e7cea3dedca5984780bafc599bd69add087d56",
+          "pool": "0x98a5737749490856b401db5dc27f522fc314a4e1",
+          "poolId": 5
+        }
+      }
+    },
+    "polygon": {
+      "chainId": 109,
+      "StargateRouter": "0x45A01E4e04F14f7A4a6702c74187c5F6222033cd",
+      "feeLibrary": "0xd46ccf40d6dd371ade5c9d0e8f83354cf62285ed",
+      "token": {
+        "USDT": {
+          "address": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
+          "pool": "0x29e38769f23701a2e4a8ef0492e19da4604be62c",
+          "poolId": 2
+        },
+        "USDC": {
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "pool": "0x1205f31718499dbf1fca446663b532ef87481fe1",
+          "poolId": 1
+        }
+      }
+    },
+    "bscTestnet": {
+      "chainId": 10102,
+      "StargateRouter": "0xbB0f1be1E9CE9cB27EA5b0c3a85B7cc3381d8176",
+      "feeLibrary": "0xAa70510cC5da7a0A8818Be7D7D2cF2E82D5aEAF7",
+      "token": {
+        "USDT": {
+          "address": "0xF49E250aEB5abDf660d643583AdFd0be41464EfD",
+          "pool": "0x76f5d2d38c1e3ceceffcc6ccd0a4fc541f995c5b",
+          "poolId": 2
+        }
+      }
+    },
+    "mumbai": {
+      "chainId": 10109,
+      "StargateRouter": "0x817436a076060D158204d955E5403b6Ed0A5fac0",
+      "feeLibrary": "0x309258559afEaaAbB45184bCBa854bBFda32881b",
+      "token": {
+        "USDC": {
+          "address": "0x742DfA5Aa70a8212857966D491D67B09Ce7D6ec7",
+          "pool": "0xfc0fd6425c6ffe98e4eae17443c10f5ddbdaaec3",
+          "poolId": 1
+        }
+      }
+    },
+    "fuji": {
+      "chainId": 10106,
+      "StargateRouter": "0x13093E05Eb890dfA6DacecBdE51d24DabAb2Faa1",
+      "feeLibrary": "0x397c9Df58f8e01F38cfaC625cf736F0716f093C8",
+      "token": {
+        "USDC": {
+          "address": "0x4A0D1092E9df255cf95D72834Ea9255132782318",
+          "pool": "0xf14b09e2524855460d3a2cf7e682b8e8b1ba0f35",
+          "poolId": 1
+        }
+      }
+    }
+  }
+}
