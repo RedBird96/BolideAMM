@@ -1,30 +1,30 @@
 # Strategy Server
 
-Strategy Server для проекта Bolide
+Strategy Server for the Bolide project
 
-# Подготовка к разработке
-- VSC настроенное для работы (конфиг примерный ниже)
-- Установленные рекомендуемые модули (конфиг ниже)
-- node.js, npm (см. зависимости в Docker)
-- husky и понимание его работы
-- ncu установленный глобально для обновления пакетов
+# Preparation for Development
+- VSC configured for work (sample configuration below)
+- Recommended modules installed (config below)
+- node.js, npm (see dependencies in Docker)
+- husky and understanding of its operation
+- ncu installed globally for package updates
 
-# Локальный запуск
-redis и postgres установленные локально или запущенные в контейнере, например:
-- создать в базе данных пользователей с правами
+# Local Launch
+redis and postgres installed locally or running in containers, for example
+- Create a database user with the command
 `
 CREATE USER postgres WITH SUPERUSER PASSWORD 'postgres';
 CREATE USER staging WITH SUPERUSER PASSWORD 'staging';
 `
-- создать в docker volumes с именем postgres_database
-- `npm run dc:dev` запустит проект в docker, после завершения работы postgres и redis будут далее работать
-- `npm run start:dev` запустить проект локально
+- Create Docker volumes with the name postgres_database
+- `npm run dc:dev`  launches the project in Docker; once completed, postgres and redis will remain active
+- `npm run start:dev` starts the project locally
 
-# Работа с миграциями
-Миграции - изменения структуры базы данных от одной версии до другой. Миграции находятся в `src/migrations`, чтобы было легче поддерживать изменения структуры БД
-Также в этой директории лежат сиды - операции по наполнению БД данным без изменения ее структуры.
+# Working with Migrations
+Migrations - modify the database structure from one version to another. They are located in `src/migrations` for easier maintenance. This directory also 
+contains seeds—operations to populate the database without altering its structure.
 
-Конфиг файл с подключением к БД `src/shared/services/ormconfig` используется как самим приложением, так и typeorm cli, которому нужно подключиться к базе для генерации миграций
+The database connection configuration file `src/shared/services/ormconfig` is used by both the application and the typeorm CLI, which connects to the database to generate migrations.
 
 ```js
 {
@@ -33,33 +33,33 @@ CREATE USER staging WITH SUPERUSER PASSWORD 'staging';
 }
 ```
 
-Для работы есть следующие команды
-- `migration:create` - создает template миграции в `src/migration`
-- `migration:generate` - генерирует миграцию в `src/migration` на основе изменений в `*.entity.ts` файлах кодовой базы проекта, вызывать с указанием имени миграции, например RenameFieldToValue
-- `migration:run` - Запускает актуальные миграции из `src/migration`
-- `migration:revert` - Запускает откат миграции(метод `down`), крайней миграции в таблице `public.migrations`. Если нужно несколько откатов, то необходимо выполнить эту команду несколько раз
+Commands for working with migrations:
+- `migration:create` -  creates a template migration in `src/migration`
+- `migration:generate` - generates a migration in `src/migration` based on changes in `.entity.ts` files. Specify a name, e.g., RenameFieldToValue.
+- `migration:run` - Runs the latest migrations from `src/migration`
+- `migration:revert` - Rolls back the last migration (using the `down` method) recorded in the `public.migrations` table. Run this command multiple times for multiple rollbacks.
 
-Хронология событий при запуске
+Event Chronology During Startup
 
-1. После команды npm run start TypeORM делает запрос `SELECT * FROM "migrations" "migrations" ORDER BY "id" DESC`
-1. Если в `src/migrations` есть названия миграций, которых нет в БД в таблице `migrations`, то typeorm начинает их прогон один за одним.
-1. Создается транзакция, выполняется код миграции в одном из файлов `src/migrations/*.ts`, затем записывается в таблицу `INSERT INTO "migrations"("timestamp", "name") VALUES (1649396297132, "SeedInit1649396297132");`, после чего происходит `COMMIT TRANSACTION;` и в конце Nest.js поднимает приложение
-1. Если актуальных миграций нет, то приложение поднимается без изменений в БД
+1. The npm run start command triggers TypeORM to execute `SELECT * FROM "migrations" "migrations" ORDER BY "id" DESC`
+2. If `src/migrations` contains `migrations` not recorded in the database, typeorm applies them sequentially.
+3. A transaction is created, migration code from `src/migrations/*.ts` is executed, and the migration is recorded with: `INSERT INTO "migrations"("timestamp", "name") VALUES (1649396297132, "SeedInit1649396297132");
+` Finally, a `COMMIT TRANSACTION` is performed, and Nest.js starts the application.
+4. If there are no new migrations, the app starts without database changes.
 
 
-# Синхронизация/изменение контрактов и путей обмена между средами
-Данный механизм создает недостающие записи, а так же меняет атрибуты текущих записей. При этом никакие записи в БД, которые не присутствуют в выгрузке, не удалюятся. Так же не меняются никакие ссылки между записями в БД.
+# Contract Synchronization/Exchange Paths Across Environments
 
-1. Выгрузка текущего состояния:
+This mechanism creates missing records and updates attributes of existing records. Records not included in the uploaded data are not deleted, nor are links between records changed.
+
+1. Export Current State:
 ```bash
 curl --location --request GET '/blockchains/1/state' \
 --header 'Accept: application/json' \
 --header 'Authorization: Bearer <token>' > state.json
 ```
 
-2. Если необходимо, в выгрузку из п1 вносятся необходимые изменения. Свойства, которые не нужно синхронизировать или менять, можно удалить.
-
-3. Загрузка нового состояния:
+2. Loading new state:
 ```bash
 curl --location --request PUT '/blockchains/1/state' \
 --header 'Accept: application/json' \
@@ -68,57 +68,57 @@ curl --location --request PUT '/blockchains/1/state' \
 -d @./state.json
 ```
 
-# Работа с Docker
+# Working with Docker
 
-## Нужно создать volumes
+## Create volumes:
 
 - postgres_database
 
-## Что бы запустить в docker
+## Launch in Docker
 
 - `npm run dc:dev`
 
-# Обновление node_modules
+# Updating `node_modules`
 - `npm i -g npm-check-updates`
 - `ncu`
 
-# Работа с husky
-- инициализация работы husky `npx husky-init && npm install`
-- конфиг husky находится в package.json
+# Working with Husky
+- Initialize Husky `npx husky-init && npm install`
+- Husky configuration is located in package.json
 # ENV
 
 ### Logs
-- `ROLLBAR_TOKEN` - токен доступа
-- `LOG_LEVEL` - уровень логов в pino формате (trace, debug, info, warn, error, fatal, silent)
+- `ROLLBAR_TOKEN` - Access token
+- `LOG_LEVEL` - Log level in Pino format (trace, debug, info, warn, error, fatal, silent)
 
 ### Common
-- `IS_NOTIFY_TO_SLACK_AFTER_START` - отправлять оповещение в slack о старте / рестарте приложения
-- `IS_NOTIFY_TO_SLACK_BROCKEN_SETTINGS` - отправлять оповещения в slack при неправильных настройках стратегии
-- `IS_USE_VAULT` - использовать vault или брать только из env
-- `IS_USE_PINO_PRETTY_TRANSPORT` - разрешает использовать форматирование логов через pino-pretty
+- `IS_NOTIFY_TO_SLACK_AFTER_START` - Notify Slack on app start/restart
+- `IS_NOTIFY_TO_SLACK_BROCKEN_SETTINGS` - Notify Slack on incorrect strategy settings
+- `IS_USE_VAULT` - Use Vault or only ENV
+- `IS_USE_PINO_PRETTY_TRANSPORT` - Enable log formatting via pino-pretty
 
 ### Blockchain
-- `OPERATIONS_PRIVATE_KEY` - кошелек для запуска операций по стратегии
-- `BOOSTING_PRIVATE_KEY` - кошелек для бустинга стратегии
-- `BSC_NETWORK_URL` - RPC URL для Binance Smart Chain
-- `ETH_NETWORK_URL` - RPC URL для Ethereum
-- `BSC_QUIKNODE_NETWORK_URL` - RPC URL для BSC через сервис quiknode
+- `OPERATIONS_PRIVATE_KEY` - Wallet for strategy operations
+- `BOOSTING_PRIVATE_KEY` - Wallet for strategy boosting
+- `BSC_NETWORK_URL` - RPC URL for Binance Smart Chain
+- `ETH_NETWORK_URL` - RPC URL for Ethereum
+- `BSC_QUIKNODE_NETWORK_URL` - RPC URL for BSC via QuickNode service
 
 ### Swagger
-- `IS_SHOW_DOCS` - показывать ли swagger документацию
+- `IS_SHOW_DOCS` - Show Swagger documentation
 
 ### JWT, Cookies
 - `JWT_SECRET_KEY` - random string
 - `JWT_EXPIRATION_TIME` - default 3600
-- `STRATEGY_SERVER_COOKIE_DOMAIN` - домен для которого проставляются куки
-- `ACCESS_TOKEN_COOKIE_NAME` - имя access token в куках
-- `COOKIE_MAX_AGE` - время жизни куки в секундах
+- `STRATEGY_SERVER_COOKIE_DOMAIN` - Domain for cookies
+- `ACCESS_TOKEN_COOKIE_NAME` - Name of the access token in cookies
+- `COOKIE_MAX_AGE` - Cookie lifespan in seconds
 
 ### Admin
 
-- `ADMIN_EMAIL` - email для администратора (по умолчанию strategy-admin@tencoins.org)
-- `ADMIN_LOGIN` - логин администратора (admin)
-- `ADMIN_PASSWORD` - пароль администратора (admin)
+- `ADMIN_EMAIL` - Administrator email (default: strategy-admin@tencoins.org)
+- `ADMIN_LOGIN` - Admin login (admin)
+- `ADMIN_PASSWORD` - Admin password (admin)
 
 ### Postgre DB
 
@@ -132,27 +132,24 @@ curl --location --request PUT '/blockchains/1/state' \
 - `REDIS_URL`
 
 ### Swagger
-  На проекте реализована документация Swagger,
-  после равертывания среды, прочесть документацию можно по адресу:
-  http://localhost${PORT}/swagger/#
+  Project documentation is available at http://localhost${PORT}/swagger/#
 
 # Tests
-  Для запуска тестов, требуется создать тестовую базу данных strategy_server_local_test,
+  To run tests, create a test database strategy_server_local_test. For Docker,
 
-  для докер среды, это можно сделать через терминал, коммандами:
   `BASE=$(docker ps -f name=postgres --format="{{.ID}}")`
   `docker exec -it $BASE psql -U user -d strategy_bolide_local -c "create database strategy_server_local_test"`
 
 # Scripts
 
-- `npm run start` стартует nest приложение
-- `npm run stat:dec` стартует nest приложение в dev режиме с отслеживанием изменений в файлах
-- `npm run start:prod` стартует приложение в production режиме
-- `npm run start:debug` стартует приложение в dev режиме с включенным debug
-- `npm run dc:dev` - стартует приложение в dev режиме внутри Docker
+- `npm run start` Starts the Nest application
+- `npm run stat:dec` Starts in dev mode with file watching
+- `npm run start:prod` Starts in production mode
+- `npm run start:debug` Starts in dev mode with debugging enabled
+- `npm run dc:dev` - Starts in dev mode inside Docker
 
 # VSC
-## конфиг settings.json
+## config settings.json
 `{
   "files.autoSave": "afterDelay",
   "git.ignoreLimitWarning": true,
@@ -177,7 +174,7 @@ curl --location --request PUT '/blockchains/1/state' \
   },
 }`
 
-## рекомендуемые расширения
+## Recommended Extensions
 - DotENV
 - Docker
 - ESLint
